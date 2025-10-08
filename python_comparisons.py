@@ -31,3 +31,31 @@ def get_grade(score):
 
 def is_even(number):
     return "Even" if number % 2 == 0 else "Odd"
+
+# Python equivalent
+def count_to_ten():
+    for i in range(1, 11):
+        print(i)
+
+
+def print_array_items(items):
+    for item in items:
+        print(item)
+
+def countdown_from(n):
+    while n > 0:
+        print(n)
+        n -= 1
+    print("Blast off!")
+
+def find_first_even(numbers):
+    for i, num in enumerate(numbers):
+        if num % 2 == 0:
+            print(f"First even number: {num} at index {i}")
+            break
+
+def print_odds_only(numbers):
+    for num in numbers:
+        if num % 2 == 0:
+            continue
+        print(f"Odd number: {num}")
